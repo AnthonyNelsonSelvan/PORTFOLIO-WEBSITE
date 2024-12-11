@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+#nav-bar-profile img{
+  width: 3.2rem;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 0.1rem whitesmoke solid;
+  transition: 0.3s;
+  box-shadow: 20px 10px 10px rgb(38, 38, 38);
+}
+#nav-bar-profile img:hover{
+  transform: scale(1.2);
+}
+#nav-bar-profile a{
+  position: fixed;
+  top: 2.2rem;
+  font-family: fantasy;
+  background-color:whitesmoke;
+  border-radius: 10%;
+  box-shadow: 20px 10px 10px rgb(38, 38, 38);
+}
+#nav-bar-option {
+  transform: 0.3 ease;
+}
+#nav-bar-option a{
+  margin-right: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bolder;
+  color: red;
+}
+#nav-bar-option a:hover{
+  border-bottom: 0.1rem solid red;
+  color: blue
+}
+a {
+  all: unset;
+  display: inline-block;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#home-profile img{
+  width: 20rem;
+  border-radius: 40%;
+  margin: 7rem;
+  object-fit: cover;
+  box-shadow: 20px 15px 10px rgb(38, 38, 38);
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease-in;
+  border: 4px red solid;
+}
+#home-profile img:hover {
+  transform: translateY(1rem);
+}
+#home-content {
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  width: 37rem;
+}
+#home-content p {
+  color: gray;
+  line-height: 1.3;
+}
+span {
+  color: red;
+}
+#work-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(149, 143, 143);
+  height: 75vh;
+}
+#education-topic{
+  font-family: fantasy;
+  color: rgb(17, 16, 16);
+  font-size: larger;
+}
+#education-table {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+#education-table th {
+  padding: 1rem;
+  background-color: rgb(246, 82, 82);
+  font-size: large;
+  font-style: bold;
+}
+#education-table td {
+  padding: 1rem;
+  background-color: beige;
+  font-size: large;
+  font-style: bold;
+}
+.cta-btn {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.cta-btn:hover {
+  background-color: #d40000; /* Darker red on hover */
+}
+#icon i{
+  margin: 1rem;
+  transition: 0.3s ease-in-out;
+}
+#icon i:hover{
+  scale: 3;
+  color: red;
+}
+@media screen and (max-width: 600px) {
+  #nav-bar-option a {
+    display: block;
+  }
+  #nav-bar-option{
+    background-color: black;
+    margin-right: 0;
+    display: none;
+  }
+  #home-profile{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  #home-profile img{
+    width: 15rem;
+  }
+  #home-content{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+  }
+}
